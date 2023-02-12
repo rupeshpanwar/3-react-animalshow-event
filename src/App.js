@@ -1,7 +1,7 @@
 import {useState } from 'react'
 import AnimalShow from './AnimalShow'
 
-const animals = ['Lion', 'Tiger', 'Elephant', 'Giraffe', 'Zebra'];
+const animals = ['bird', 'cat', 'cow', 'dog', 'gator', 'horse'];
 
 const randomAnimal = () => {
   const randomIndex = Math.floor(Math.random() * animals.length);
