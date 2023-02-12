@@ -1,3 +1,4 @@
+import './AnimalShow.css'
 import cat from './svg/cat.svg'
 import bird from './svg/bird.svg'
 import cow from './svg/cow.svg'
@@ -26,9 +27,9 @@ function Animal({type}){
 
   const animalSvg = svgMap[type];
   return (
-  <div onClick={handleClicks}>
-    <img src={animalSvg} alt={`${type} icon`} />
-    <img src={heart} alt={`${type} icon`}
+  <div className="animal-show" onClick={handleClicks}>
+    <img className="animal" src={animalSvg} alt={`${type} icon`} />
+    <img className="heart" src={heart} alt={`${type} icon`}
     style={{
         width: 10 + 10 * clicks + 'px'
     }}
