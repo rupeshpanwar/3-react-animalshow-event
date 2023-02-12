@@ -1,6 +1,6 @@
-function Animal(){
+function Animal({type}){
 
-    return <h1>Anithing is fine</h1>
+    return <div>{type}</div>
 }
 
 export default Animal;
